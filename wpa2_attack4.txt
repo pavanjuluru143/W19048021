@@ -1,0 +1,79 @@
+
+D:\WiFi_Security\hashcat-6.2.5>hashcat -d 1 -m 22000 -w 3 --status -a 0 ../WPA2/handshakeWPA2-01.hc22000 -r ../rulebased/r2.rule -r ../rulebased/r1.rule ../pwdlist.txt
+hashcat (v6.2.5) starting
+
+OpenCL API (OpenCL 2.1 ) - Platform #1 [Intel(R) Corporation]
+=============================================================
+* Device #1: Intel(R) HD Graphics 620, 4032/8146 MB (1023 MB allocatable), 23MCU
+* Device #2: Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz, skipped
+
+Minimum password length supported by kernel: 8
+Maximum password length supported by kernel: 63
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Single-Hash
+* Single-Salt
+* Slow-Hash-SIMD-LOOP
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Host memory required for this attack: 826 MB
+
+Dictionary cache built:
+* Filename..: ../pwdlist.txt
+* Passwords.: 100006
+* Bytes.....: 815379
+* Keyspace..: 100006
+* Runtime...: 0 secs
+
+Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 17:05:04 2022 (7 secs)
+Time.Estimated...: Mon May 09 17:05:13 2022 (2 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt)
+Guess.Mod........: Rules (../rulebased/r2.rule, ../rulebased/r1.rule)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:     4653 H/s (3.41ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 88084/100006 (88.08%)
+Rejected.........: 57576/88084 (65.36%)
+Restore.Point....: 85873/100006 (85.87%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:1504-1536
+Candidate.Engine.: Device Generator
+Candidates.#1....: clubhouse#654 -> charmed13#654
+
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 17:05:04 2022 (10 secs)
+Time.Estimated...: Mon May 09 17:05:14 2022 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt)
+Guess.Mod........: Rules (../rulebased/r2.rule, ../rulebased/r1.rule)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:     4001 H/s (1.73ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 100006/100006 (100.00%)
+Rejected.........: 63886/100006 (63.88%)
+Restore.Point....: 100006/100006 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: igotgame#654 -> Wjohn#65#654
+Started: Mon May 09 17:04:57 2022
+Stopped: Mon May 09 17:05:16 2022
+
+D:\WiFi_Security\hashcat-6.2.5>

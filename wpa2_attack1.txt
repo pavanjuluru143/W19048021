@@ -1,0 +1,78 @@
+
+D:\WiFi_Security\hashcat-6.2.5>hashcat -d 1 -m 22000 -w 3 -a 0 --status ../WPA2/handshakeWPA2-01.hc22000 ../pwdlist.txt
+hashcat (v6.2.5) starting
+
+OpenCL API (OpenCL 2.1 ) - Platform #1 [Intel(R) Corporation]
+=============================================================
+* Device #1: Intel(R) HD Graphics 620, 4032/8146 MB (1023 MB allocatable), 23MCU
+* Device #2: Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz, skipped
+
+Minimum password length supported by kernel: 8
+Maximum password length supported by kernel: 63
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Single-Hash
+* Single-Salt
+* Slow-Hash-SIMD-LOOP
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Host memory required for this attack: 826 MB
+
+Dictionary cache built:
+* Filename..: ../pwdlist.txt
+* Passwords.: 100000
+* Bytes.....: 815336
+* Keyspace..: 100000
+* Runtime...: 0 secs
+
+Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Sun May 08 22:52:13 2022 (7 secs)
+Time.Estimated...: Sun May 08 22:52:20 2022 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:     4767 H/s (3.37ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 95463/100000 (95.46%)
+Rejected.........: 62011/95463 (64.96%)
+Restore.Point....: 93224/100000 (93.22%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:1120-1152
+Candidate.Engine.: Device Generator
+Candidates.#1....: december07 -> ihateppl
+
+85c6163d9fb4bd260d3a7b4ef9604949:5aaa399cc368:3c58c2b08687:testWPA2:Wjohn#654
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Sun May 08 22:52:13 2022 (8 secs)
+Time.Estimated...: Sun May 08 22:52:21 2022 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:     4524 H/s (1.72ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 1/1 (100.00%) Digests
+Progress.........: 100000/100000 (100.00%)
+Rejected.........: 63881/100000 (63.88%)
+Restore.Point....: 96935/100000 (96.94%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: igotgame -> Wjohn#654
+Started: Sun May 08 22:52:06 2022
+Stopped: Sun May 08 22:52:22 2022
+
+D:\WiFi_Security\hashcat-6.2.5>

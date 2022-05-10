@@ -1,0 +1,68 @@
+
+D:\WiFi_Security\hashcat-6.2.5>hashcat -d 1 -m 22000 -w 3 -a 1 ../WPA2/handshakeWPA2-01.hc22000 ../pwdlist.txt ../wordlist2.txt
+hashcat (v6.2.5) starting
+
+OpenCL API (OpenCL 2.1 ) - Platform #1 [Intel(R) Corporation]
+=============================================================
+* Device #1: Intel(R) HD Graphics 620, 4032/8146 MB (1023 MB allocatable), 23MCU
+* Device #2: Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz, skipped
+
+Minimum password length supported by kernel: 8
+Maximum password length supported by kernel: 63
+
+Dictionary cache hit:
+* Filename..: ../pwdlist.txt
+* Passwords.: 100004
+* Bytes.....: 815365
+* Keyspace..: 100004
+
+Dictionary cache hit:
+* Filename..: ../wordlist2.txt
+* Passwords.: 1
+* Bytes.....: 12
+* Keyspace..: 1
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+
+Optimizers applied:
+* Zero-Byte
+* Single-Hash
+* Single-Salt
+* Slow-Hash-SIMD-LOOP
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Host memory required for this attack: 826 MB
+
+Dictionary cache hit:
+* Filename..: ../pwdlist.txt
+* Passwords.: 100004
+* Bytes.....: 815365
+* Keyspace..: 100004
+
+Approaching final keyspace - workload adjusted.
+
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 02:29:52 2022 (21 secs)
+Time.Estimated...: Mon May 09 02:30:13 2022 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: File (../wordlist2.txt), Right Side
+Speed.#1.........:     4924 H/s (1.56ms) @ Accel:64 Loops:32 Thr:32 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 100004/100004 (100.00%)
+Rejected.........: 0/100004 (0.00%)
+Restore.Point....: 100004/100004 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: !QAZzaq1@gmail.com -> ohn#654@gmail.com
+
+Started: Mon May 09 02:29:27 2022
+Stopped: Mon May 09 02:30:15 2022
+
+D:\WiFi_Security\hashcat-6.2.5>

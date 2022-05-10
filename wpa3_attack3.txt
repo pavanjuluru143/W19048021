@@ -1,0 +1,19 @@
+
+D:\WiFi_Security\hashcat-6.2.5>hashcat -d 1 -m 22000 -w 3 -a 1 ../WPA3/handshakeWPA3-01.hc22000 ../pwdlist.txt ../wordlist2.txt
+hashcat (v6.2.5) starting
+
+OpenCL API (OpenCL 2.1 ) - Platform #1 [Intel(R) Corporation]
+=============================================================
+* Device #1: Intel(R) HD Graphics 620, 4032/8146 MB (1023 MB allocatable), 23MCU
+* Device #2: Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz, skipped
+
+Minimum password length supported by kernel: 8
+Maximum password length supported by kernel: 63
+
+Hash '../WPA3/handshakeWPA3-01.hc22000': Separator unmatched
+No hashes loaded.
+
+Started: Mon May 09 03:21:09 2022
+Stopped: Mon May 09 03:21:12 2022
+
+D:\WiFi_Security\hashcat-6.2.5>

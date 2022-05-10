@@ -1,0 +1,1421 @@
+
+D:\WiFi_Security\hashcat-6.2.5>hashcat -d 1 -m 22000 -w 3 --status -a 6 ../WPA2/handshakeWPA2-01.hc22000 ../pwdlist.txt ?s
+hashcat (v6.2.5) starting
+
+OpenCL API (OpenCL 2.1 ) - Platform #1 [Intel(R) Corporation]
+=============================================================
+* Device #1: Intel(R) HD Graphics 620, 4032/8146 MB (1023 MB allocatable), 23MCU
+* Device #2: Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz, skipped
+
+Minimum password length supported by kernel: 8
+Maximum password length supported by kernel: 63
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+
+Optimizers applied:
+* Zero-Byte
+* Single-Hash
+* Single-Salt
+* Slow-Hash-SIMD-LOOP
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Host memory required for this attack: 826 MB
+
+Dictionary cache hit:
+* Filename..: ../pwdlist.txt
+* Passwords.: 100004
+* Bytes.....: 815365
+* Keyspace..: 3300132
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (7 secs)
+Time.Estimated...: Mon May 09 01:48:02 2022 (9 mins, 22 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5870 H/s (61.72ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 0/3300132 (0.00%)
+Rejected.........: 0/0 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:3648-3680
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456* -> lilyann*
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (18 secs)
+Time.Estimated...: Mon May 09 01:48:36 2022 (9 mins, 45 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5475 H/s (61.91ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 94208/3300132 (2.85%)
+Rejected.........: 0/94208 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:2-3 Iteration:160-192
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456@ -> lilyann@
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (28 secs)
+Time.Estimated...: Mon May 09 01:48:50 2022 (9 mins, 49 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5363 H/s (62.10ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 141312/3300132 (4.28%)
+Rejected.........: 0/141312 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:3-4 Iteration:800-832
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456! -> lilyann!
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (39 secs)
+Time.Estimated...: Mon May 09 01:48:48 2022 (9 mins, 36 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5393 H/s (61.99ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 188416/3300132 (5.71%)
+Rejected.........: 0/188416 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:4-5 Iteration:1728-1760
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456( -> lilyann(
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (49 secs)
+Time.Estimated...: Mon May 09 01:48:52 2022 (9 mins, 30 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5373 H/s (62.04ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 235520/3300132 (7.14%)
+Rejected.........: 0/235520 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:5-6 Iteration:2720-2752
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456$ -> lilyann$
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (1 min, 0 secs)
+Time.Estimated...: Mon May 09 01:48:58 2022 (9 mins, 25 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5334 H/s (62.11ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 282624/3300132 (8.56%)
+Rejected.........: 0/282624 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:6-7 Iteration:3552-3584
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456. -> lilyann.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (1 min, 11 secs)
+Time.Estimated...: Mon May 09 01:48:51 2022 (9 mins, 7 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5340 H/s (62.98ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 376832/3300132 (11.42%)
+Rejected.........: 0/376832 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:8-9 Iteration:160-192
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456_ -> lilyann_
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (1 min, 21 secs)
+Time.Estimated...: Mon May 09 01:48:50 2022 (8 mins, 56 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5365 H/s (61.96ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 423936/3300132 (12.85%)
+Rejected.........: 0/423936 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:9-10 Iteration:1120-1152
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456< -> lilyann<
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (1 min, 32 secs)
+Time.Estimated...: Mon May 09 01:48:52 2022 (8 mins, 47 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5359 H/s (62.55ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 471040/3300132 (14.27%)
+Rejected.........: 0/471040 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:10-11 Iteration:2048-2080
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456~ -> lilyann~
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (1 min, 43 secs)
+Time.Estimated...: Mon May 09 01:48:54 2022 (8 mins, 38 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5370 H/s (62.13ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 518144/3300132 (15.70%)
+Rejected.........: 0/518144 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:11-12 Iteration:3104-3136
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456[ -> lilyann[
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (1 min, 53 secs)
+Time.Estimated...: Mon May 09 01:48:54 2022 (8 mins, 28 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5380 H/s (63.36ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 565248/3300132 (17.13%)
+Rejected.........: 0/565248 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:12-13 Iteration:4000-4032
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456/ -> lilyann/
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (2 mins, 4 secs)
+Time.Estimated...: Mon May 09 01:48:46 2022 (8 mins, 9 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5390 H/s (62.53ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 659456/3300132 (19.98%)
+Rejected.........: 0/659456 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:14-15 Iteration:928-960
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456, -> lilyann,
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (2 mins, 15 secs)
+Time.Estimated...: Mon May 09 01:48:49 2022 (8 mins, 1 sec)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5392 H/s (62.83ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 706560/3300132 (21.41%)
+Rejected.........: 0/706560 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:15-16 Iteration:1792-1824
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456; -> lilyann;
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (2 mins, 25 secs)
+Time.Estimated...: Mon May 09 01:48:50 2022 (7 mins, 52 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5389 H/s (62.97ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 753664/3300132 (22.84%)
+Rejected.........: 0/753664 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:16-17 Iteration:2624-2656
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456= -> lilyann=
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (2 mins, 36 secs)
+Time.Estimated...: Mon May 09 01:48:52 2022 (7 mins, 43 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5387 H/s (62.56ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 800768/3300132 (24.26%)
+Rejected.........: 0/800768 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:17-18 Iteration:3520-3552
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456" -> lilyann"
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (2 mins, 46 secs)
+Time.Estimated...: Mon May 09 01:48:45 2022 (7 mins, 26 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5390 H/s (63.87ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 894976/3300132 (27.12%)
+Rejected.........: 0/894976 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:19-20 Iteration:128-160
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456? -> lilyann?
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (2 mins, 57 secs)
+Time.Estimated...: Mon May 09 01:48:47 2022 (7 mins, 17 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5393 H/s (62.75ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 942080/3300132 (28.55%)
+Rejected.........: 0/942080 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:20-21 Iteration:1440-1472
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456& -> lilyann&
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (3 mins, 9 secs)
+Time.Estimated...: Mon May 09 01:48:53 2022 (7 mins, 11 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5358 H/s (64.98ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 989184/3300132 (29.97%)
+Rejected.........: 0/989184 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:21-22 Iteration:2048-2080
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456% -> lilyann%
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (3 mins, 20 secs)
+Time.Estimated...: Mon May 09 01:48:56 2022 (7 mins, 3 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5343 H/s (64.48ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1036288/3300132 (31.40%)
+Rejected.........: 0/1036288 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:22-23 Iteration:2496-2528
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456: -> lilyann:
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (3 mins, 30 secs)
+Time.Estimated...: Mon May 09 01:48:59 2022 (6 mins, 56 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5326 H/s (63.99ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1083392/3300132 (32.83%)
+Rejected.........: 0/1083392 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:23-24 Iteration:3136-3168
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456^ -> lilyann^
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (3 mins, 41 secs)
+Time.Estimated...: Mon May 09 01:49:01 2022 (6 mins, 47 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5319 H/s (63.56ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1130496/3300132 (34.26%)
+Rejected.........: 0/1130496 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:24-25 Iteration:3872-3904
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456{ -> lilyann{
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (3 mins, 51 secs)
+Time.Estimated...: Mon May 09 01:48:54 2022 (6 mins, 30 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5311 H/s (63.21ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1224704/3300132 (37.11%)
+Rejected.........: 0/1224704 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:26-27 Iteration:288-320
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456] -> lilyann]
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (4 mins, 2 secs)
+Time.Estimated...: Mon May 09 01:48:57 2022 (6 mins, 22 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5303 H/s (63.88ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1271808/3300132 (38.54%)
+Rejected.........: 0/1271808 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:27-28 Iteration:992-1024
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456) -> lilyann)
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (4 mins, 13 secs)
+Time.Estimated...: Mon May 09 01:48:59 2022 (6 mins, 13 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5302 H/s (63.12ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1318912/3300132 (39.97%)
+Rejected.........: 0/1318912 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:28-29 Iteration:1856-1888
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456' -> lilyann'
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (4 mins, 23 secs)
+Time.Estimated...: Mon May 09 01:49:00 2022 (6 mins, 4 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5307 H/s (64.78ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1366016/3300132 (41.39%)
+Rejected.........: 0/1366016 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:29-30 Iteration:2528-2560
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456> -> lilyann>
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (4 mins, 34 secs)
+Time.Estimated...: Mon May 09 01:49:03 2022 (5 mins, 56 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5289 H/s (63.67ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1413120/3300132 (42.82%)
+Rejected.........: 0/1413120 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:30-31 Iteration:3200-3232
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456| -> lilyann|
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (4 mins, 44 secs)
+Time.Estimated...: Mon May 09 01:49:04 2022 (5 mins, 47 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5289 H/s (61.78ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1460224/3300132 (44.25%)
+Rejected.........: 0/1460224 (0.00%)
+Restore.Point....: 0/100004 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:31-32 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456} -> lilyann}
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (4 mins, 55 secs)
+Time.Estimated...: Mon May 09 01:48:57 2022 (5 mins, 29 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5296 H/s (63.05ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1554432/3300132 (47.10%)
+Rejected.........: 0/1554432 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:576-608
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva* -> 445544*
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (5 mins, 5 secs)
+Time.Estimated...: Mon May 09 01:48:58 2022 (5 mins, 20 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5300 H/s (61.85ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1601536/3300132 (48.53%)
+Rejected.........: 0/1601536 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:1-2 Iteration:1664-1696
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva# -> 445544#
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (5 mins, 17 secs)
+Time.Estimated...: Mon May 09 01:49:01 2022 (5 mins, 11 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5306 H/s (63.56ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1648640/3300132 (49.96%)
+Rejected.........: 0/1648640 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:2-3 Iteration:2944-2976
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva@ -> 445544@
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (5 mins, 28 secs)
+Time.Estimated...: Mon May 09 01:49:04 2022 (5 mins, 3 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5294 H/s (66.24ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1695744/3300132 (51.38%)
+Rejected.........: 0/1695744 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:3-4 Iteration:3296-3328
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva! -> 445544!
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (5 mins, 39 secs)
+Time.Estimated...: Mon May 09 01:49:07 2022 (4 mins, 55 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5272 H/s (64.58ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1742848/3300132 (52.81%)
+Rejected.........: 0/1742848 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:4-5 Iteration:3744-3776
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva( -> 445544(
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (5 mins, 50 secs)
+Time.Estimated...: Mon May 09 01:49:10 2022 (4 mins, 47 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5261 H/s (63.37ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1789952/3300132 (54.24%)
+Rejected.........: 0/1789952 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:5-6 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva$ -> 445544$
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (6 mins, 0 secs)
+Time.Estimated...: Mon May 09 01:49:02 2022 (4 mins, 29 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5260 H/s (62.32ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1884160/3300132 (57.09%)
+Rejected.........: 0/1884160 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:7-8 Iteration:736-768
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva- -> 445544-
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (6 mins, 10 secs)
+Time.Estimated...: Mon May 09 01:49:03 2022 (4 mins, 20 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5261 H/s (63.24ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1931264/3300132 (58.52%)
+Rejected.........: 0/1931264 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:8-9 Iteration:1664-1696
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva_ -> 445544_
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (6 mins, 22 secs)
+Time.Estimated...: Mon May 09 01:49:06 2022 (4 mins, 11 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5256 H/s (42005.22ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 1978368/3300132 (59.95%)
+Rejected.........: 0/1978368 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:9-10 Iteration:2944-2976
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva< -> 445544<
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (6 mins, 33 secs)
+Time.Estimated...: Mon May 09 01:49:08 2022 (4 mins, 2 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5263 H/s (61.66ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2025472/3300132 (61.38%)
+Rejected.........: 0/2025472 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:10-11 Iteration:4064-4095
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva~ -> 445544~
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (6 mins, 43 secs)
+Time.Estimated...: Mon May 09 01:48:59 2022 (3 mins, 43 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5275 H/s (62.64ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2119680/3300132 (64.23%)
+Rejected.........: 0/2119680 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:12-13 Iteration:768-800
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva/ -> 445544/
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (6 mins, 54 secs)
+Time.Estimated...: Mon May 09 01:49:01 2022 (3 mins, 34 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5282 H/s (61.64ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2166784/3300132 (65.66%)
+Rejected.........: 0/2166784 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:13-14 Iteration:1856-1888
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva+ -> 445544+
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (7 mins, 4 secs)
+Time.Estimated...: Mon May 09 01:49:02 2022 (3 mins, 25 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5288 H/s (61.65ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2213888/3300132 (67.08%)
+Rejected.........: 0/2213888 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:14-15 Iteration:2912-2944
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva, -> 445544,
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (7 mins, 15 secs)
+Time.Estimated...: Mon May 09 01:49:04 2022 (3 mins, 16 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5294 H/s (61.66ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2260992/3300132 (68.51%)
+Rejected.........: 0/2260992 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:15-16 Iteration:4000-4032
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva; -> 445544;
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (7 mins, 25 secs)
+Time.Estimated...: Mon May 09 01:48:56 2022 (2 mins, 58 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5305 H/s (61.93ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2355200/3300132 (71.37%)
+Rejected.........: 0/2355200 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:17-18 Iteration:768-800
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva" -> 445544"
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (7 mins, 36 secs)
+Time.Estimated...: Mon May 09 01:48:58 2022 (2 mins, 49 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5307 H/s (62.66ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2402304/3300132 (72.79%)
+Rejected.........: 0/2402304 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:18-19 Iteration:1472-1504
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva` -> 445544`
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (7 mins, 46 secs)
+Time.Estimated...: Mon May 09 01:48:59 2022 (2 mins, 40 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5304 H/s (65.12ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2449408/3300132 (74.22%)
+Rejected.........: 0/2449408 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:19-20 Iteration:2176-2208
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva? -> 445544?
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (7 mins, 57 secs)
+Time.Estimated...: Mon May 09 01:49:01 2022 (2 mins, 31 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5299 H/s (63.68ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2496512/3300132 (75.65%)
+Rejected.........: 0/2496512 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:20-21 Iteration:2816-2848
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva& -> 445544&
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (8 mins, 8 secs)
+Time.Estimated...: Mon May 09 01:49:03 2022 (2 mins, 22 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5298 H/s (66.85ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2543616/3300132 (77.08%)
+Rejected.........: 0/2543616 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:21-22 Iteration:3424-3456
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva% -> 445544%
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (8 mins, 18 secs)
+Time.Estimated...: Mon May 09 01:49:05 2022 (2 mins, 14 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5294 H/s (65.85ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2590720/3300132 (78.50%)
+Rejected.........: 0/2590720 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:22-23 Iteration:4000-4032
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva: -> 445544:
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (8 mins, 29 secs)
+Time.Estimated...: Mon May 09 01:48:58 2022 (1 min, 56 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5280 H/s (65.89ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2684928/3300132 (81.36%)
+Rejected.........: 0/2684928 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:24-25 Iteration:416-448
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva{ -> 445544{
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (8 mins, 40 secs)
+Time.Estimated...: Mon May 09 01:49:00 2022 (1 min, 47 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5283 H/s (62.09ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2732032/3300132 (82.79%)
+Rejected.........: 0/2732032 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:25-26 Iteration:1376-1408
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva\ -> 445544\
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (8 mins, 50 secs)
+Time.Estimated...: Mon May 09 01:49:01 2022 (1 min, 38 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5288 H/s (61.66ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2779136/3300132 (84.21%)
+Rejected.........: 0/2779136 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:26-27 Iteration:2464-2496
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva] -> 445544]
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (9 mins, 1 sec)
+Time.Estimated...: Mon May 09 01:49:03 2022 (1 min, 29 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5292 H/s (61.94ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2826240/3300132 (85.64%)
+Rejected.........: 0/2826240 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:27-28 Iteration:3456-3488
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva) -> 445544)
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (9 mins, 11 secs)
+Time.Estimated...: Mon May 09 01:48:55 2022 (1 min, 11 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5299 H/s (62.48ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2920448/3300132 (88.49%)
+Rejected.........: 0/2920448 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:29-30 Iteration:96-128
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva> -> 445544>
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (9 mins, 22 secs)
+Time.Estimated...: Mon May 09 01:48:57 2022 (1 min, 2 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5301 H/s (63.08ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 2967552/3300132 (89.92%)
+Rejected.........: 0/2967552 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:30-31 Iteration:896-928
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva| -> 445544|
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (9 mins, 33 secs)
+Time.Estimated...: Mon May 09 01:48:59 2022 (53 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5291 H/s (66.05ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 3014656/3300132 (91.35%)
+Rejected.........: 0/3014656 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:31-32 Iteration:1216-1248
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva} -> 445544}
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (9 mins, 44 secs)
+Time.Estimated...: Mon May 09 01:49:02 2022 (45 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5281 H/s (64.12ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 3061760/3300132 (92.78%)
+Rejected.........: 0/3061760 (0.00%)
+Restore.Point....: 47104/100004 (47.10%)
+Restore.Sub.#1...: Salt:0 Amplifier:32-33 Iteration:1728-1760
+Candidate.Engine.: Device Generator
+Candidates.#1....: lietuva  -> 445544
+
+Approaching final keyspace - workload adjusted.
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (9 mins, 54 secs)
+Time.Estimated...: Mon May 09 01:49:01 2022 (34 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5258 H/s (3.37ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 3120640/3300132 (94.56%)
+Rejected.........: 0/3120640 (0.00%)
+Restore.Point....: 94208/100004 (94.20%)
+Restore.Sub.#1...: Salt:0 Amplifier:8-9 Iteration:3296-3328
+Candidate.Engine.: Device Generator
+Candidates.#1....: 431987_ -> reymundo_
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (10 mins, 4 secs)
+Time.Estimated...: Mon May 09 01:49:05 2022 (28 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5216 H/s (3.37ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 3150080/3300132 (95.45%)
+Rejected.........: 0/3150080 (0.00%)
+Restore.Point....: 94208/100004 (94.20%)
+Restore.Sub.#1...: Salt:0 Amplifier:28-29 Iteration:1088-1120
+Candidate.Engine.: Device Generator
+Candidates.#1....: 431987' -> reymundo'
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (10 mins, 15 secs)
+Time.Estimated...: Mon May 09 01:49:11 2022 (23 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5176 H/s (3.37ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 3178048/3300132 (96.30%)
+Rejected.........: 0/3178048 (0.00%)
+Restore.Point....: 95680/100004 (95.68%)
+Restore.Sub.#1...: Salt:0 Amplifier:14-15 Iteration:2368-2400
+Candidate.Engine.: Device Generator
+Candidates.#1....: reyjohn, -> gaffney,
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (10 mins, 25 secs)
+Time.Estimated...: Mon May 09 01:49:16 2022 (18 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5136 H/s (3.36ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 3206016/3300132 (97.15%)
+Rejected.........: 0/3206016 (0.00%)
+Restore.Point....: 97152/100004 (97.15%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:1408-1440
+Candidate.Engine.: Device Generator
+Candidates.#1....: gaby22* -> 251003*
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (10 mins, 35 secs)
+Time.Estimated...: Mon May 09 01:49:21 2022 (13 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5097 H/s (3.37ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 3232512/3300132 (97.95%)
+Rejected.........: 0/3232512 (0.00%)
+Restore.Point....: 97152/100004 (97.15%)
+Restore.Sub.#1...: Salt:0 Amplifier:18-19 Iteration:3776-3808
+Candidate.Engine.: Device Generator
+Candidates.#1....: gaby22` -> 251003`
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (10 mins, 45 secs)
+Time.Estimated...: Mon May 09 01:49:25 2022 (7 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5059 H/s (3.36ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 3261492/3300132 (98.83%)
+Rejected.........: 0/3261492 (0.00%)
+Restore.Point....: 98624/100004 (98.62%)
+Restore.Sub.#1...: Salt:0 Amplifier:5-6 Iteration:1184-1216
+Candidate.Engine.: Device Generator
+Candidates.#1....: 250904$ -> ohn#654$
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (10 mins, 55 secs)
+Time.Estimated...: Mon May 09 01:49:30 2022 (2 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5022 H/s (3.36ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 3287712/3300132 (99.62%)
+Rejected.........: 0/3287712 (0.00%)
+Restore.Point....: 98624/100004 (98.62%)
+Restore.Sub.#1...: Salt:0 Amplifier:24-25 Iteration:3808-3840
+Candidate.Engine.: Device Generator
+Candidates.#1....: 250904{ -> ohn#654{
+
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
+Hash.Target......: ../WPA2/handshakeWPA2-01.hc22000
+Time.Started.....: Mon May 09 01:38:33 2022 (11 mins, 0 secs)
+Time.Estimated...: Mon May 09 01:49:33 2022 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../pwdlist.txt), Left Side
+Guess.Mod........: Mask (?s) [1], Right Side
+Guess.Queue.Base.: 1/1 (100.00%)
+Guess.Queue.Mod..: 1/1 (100.00%)
+Speed.#1.........:     5003 H/s (3.38ms) @ Accel:32 Loops:32 Thr:64 Vec:1
+Recovered........: 0/1 (0.00%) Digests
+Progress.........: 3300132/3300132 (100.00%)
+Rejected.........: 0/3300132 (0.00%)
+Restore.Point....: 100004/100004 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:32-33 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 250904  -> ohn#654
+Started: Mon May 09 01:37:55 2022
+Stopped: Mon May 09 01:49:35 2022
+
+D:\WiFi_Security\hashcat-6.2.5>
